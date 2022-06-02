@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 6px;
+    grid-template-areas: 
+    "hd"
+    "fm";
+}
+
+.box1item {
+    font-size: 3.5rem;
+    font-family: serif;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.box1 {
+    grid-area: "hd";
+}
+
+.box2item {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 3;
+  
+}
+
+.box2 {
+    grid-area: "fm";
+}
+
+.block {
+    background-color: yellow;
+    padding: 9px 6px;
+    color: black;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: yellow;
+}
+
+.block:hover {
+    background-color: chartreuse;
+}
